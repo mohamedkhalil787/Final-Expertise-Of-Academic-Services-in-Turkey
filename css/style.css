@@ -1,0 +1,833 @@
+*{
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	font-family: 'PT Serif', serif;
+	color: #fff;
+	
+}
+#home{
+	background-image: linear-gradient(rgba(30, 106, 184, 0.8),rgba(30, 106, 184, 0.8)),url(../images/homepage.jpg) ;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+
+/*----------------- start header home------------------*/
+
+header{
+	max-width: 100%;
+	min-height: 70px;
+	margin: 0 auto;	
+	padding: 0px 50px;	
+}
+.nav{
+	float: right;
+	margin-top: 20px;
+		
+}
+.nav ul{
+	list-style: none;
+	
+}
+.nav ul li{
+	float: left;
+	margin-left: 20px;
+
+}
+.nav ul li a{
+	transition: all 1s;
+	color: #fff;
+}
+
+.nav ul li a:hover{
+	color: #e1c663;
+}
+a{
+	text-decoration: none;
+	display: inline-block;
+}
+.logo{
+	float: left;
+	margin-top: 20px;
+	padding: 10px;
+
+}
+.logo a{
+	display: flex;
+	color: #fff;
+}
+
+.logo a span:nth-child(1){
+	font-size: 29px;	
+}
+.logo a span:nth-child(2){
+	width: 2px;
+	height: 30px;
+	margin-left: 7px;
+	background-color: #fff;
+}
+.logo a span:nth-child(3){
+	width: 180px;
+	font-size: 14px;
+	color: #fffdfe;
+	position: static;
+	margin-left: 3px;
+}
+#dropdown{
+	display: none;
+	cursor: pointer;
+	position: relative;
+	margin-top: 10px;
+}
+#dropdown-content{
+	display: none;
+	background-color: #fff;
+	opacity: .9;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding-top: 70px;
+	text-align: center;
+	
+}
+.close::before{
+	content: "";
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-image: url(../images/close.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	color: #333;
+	cursor: pointer;
+	
+}
+#dropdown-content ul{
+	margin: 100px 0 ;
+	padding: 0;
+}
+#dropdown-content li{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 50px;
+	border: 1px solid #ffffff;
+}
+#dropdown-content li:active , #dropdown-content li:hover{
+	opacity: .5;
+}
+#dropdown-content a{
+	display: block;
+	font-size: 20px;
+	color: #415d75;
+	z-index: 10;
+	opacity: 1;
+	text-align: center;
+}
+.dropdown-icon{
+	position: absolute;
+	bottom: 2px;
+	right: 1px;
+	left: 1px;
+}
+
+
+            /*-----------------------------------end header--------------------------------------*/
+
+                     /*-----------------------start main home----------------------*/
+main{
+	width: 100%;
+}
+main .container h2{
+	max-width: 600px;
+	font-size: 28px;
+	font-weight: normal;
+	line-height: 1.5;
+}
+.addres{
+	margin-top: 137px;
+}
+.container{
+	max-width: 900px;
+	min-height: 500px;
+	margin: 0 auto ;
+	padding: 0 20px;
+}
+.content{
+	width: 100%;
+	min-height: 370px;
+	display: flex;
+	flex-direction: row;
+	margin-top: 90px;
+	position: relative;
+}
+.description, .services{
+	flex: 1;
+	background-color: #fff;
+	box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.2);
+	padding: 40px 0 100px 70px;	
+	
+}
+
+.services img{
+	position: absolute;
+	top: 0;
+	right: 50px;
+}
+
+.content p{
+	color: #3d5a76;
+	opacity: .8;
+	line-height: 2;
+	margin-right: 60px;
+	font-size: 15px;
+	
+}
+.content .services h2 , .content .description h2{
+	color: #585858;
+	font-size: 32px;
+	letter-spacing: 1;
+	opacity: .9;
+}
+.content button {
+	background-color: #fff;
+	border: 1px solid #d1e0f3;
+	color: #3d5a76 !important;
+	opacity: .8;
+	padding: 10px;
+	outline: none;
+	cursor: pointer;
+	transition: all 1s;
+}
+.content button a{
+	color: #3d5a76;
+	opacity: .8;
+}
+.content button:hover{
+	background-color: rgba(30, 106, 184, 0.05);
+}
+
+
+                      /*------------------------------------------end main home----------------------------------------*/
+
+                       /*--------------------------start footer home------------------------------*/
+#home{
+	position: relative;
+}
+.homefooter{
+	width: 100%;
+	min-height: 40px;
+	background-color: #15487d;
+	opacity: .95;
+	z-index: 2;
+	position: absolute;
+	bottom: 0%;
+	text-align: center;
+	font-size: 12px;
+	padding: 10px;
+	color: #93b9e0;
+}
+
+                             /*--------------------------------------------end footer home---------------------------------*/
+
+
+                            /*------------------- start about header------------------*/                        
+#about-header{
+	width: 100%;
+	min-height: 100px;
+	background-image: linear-gradient(rgba(30, 106, 184, 0.8),rgba(30, 106, 184, 0.8)),url(../images/about_bg.jpg);
+	background-position: center;
+	padding: 0px 50px;
+}
+#phone{
+	font-size: 15px;
+	white-space: pre;
+}
+
+
+                                         /*------------------- end about header------------------*/
+ 
+                                         /*------------------- start about  main and service main------------------*/
+#main{
+	display: flex;
+	width: 100%;
+}
+.sidebar{
+	flex-basis: 15%;
+	border-right: 1px solid #e4dddd;
+	background-color: #fbfbfb;
+	text-align: center;
+	position: relative;
+	
+}
+.sidebar ul{
+	margin-top: 80px;
+	padding: 0;
+	list-style: none;	
+	position: fixed;
+	right: 85%;
+}
+.sidebar .underline::after{....
+	content: " ";
+	display: block;
+	margin-top: 10px;
+	height: 3px;
+	background-color: #e1c653;
+	width: 120px !important;
+	position: absolute;
+	right: 0;
+}
+.sidebar ul a{
+	color: #3d5a76;
+	display: block;
+	padding: 20px;
+}
+
+.sidebar ul li .active{
+	font-weight: 400;
+	font-size: 18px ;
+}
+
+
+.icon-footer{
+	position: absolute;
+	bottom: 10px;
+	left: 1px;
+	right: 1px;
+}
+
+#main-content{
+	flex-basis: 85%;
+	width: 100%;
+	position: relative;
+}
+.main-container{
+	width: 80%;
+	margin:70px auto;
+	color: #585858;
+}
+.main-container h2{
+	color: #3d5a76;
+	padding: 20px 20px 20px 0;
+	font-size: 28px;
+	font-weight: 500;
+}
+.main-container p{
+	color: #585858;
+}
+.mission , .task , .Student{
+	border-bottom: 1px solid #f5f0f0;
+	padding-bottom: 20px;
+}
+.mission-flex{
+	display: flex;
+	flex-direction: row;
+}
+.mission-flex div{
+	flex-basis: 50%;
+}
+.task p, .work p, .a-z p ,.Staff p{   
+	padding: 0 320px 20px 0px !important;
+	
+}
+.Academic p{
+	padding: 0 25% 40px 110px !important;
+}
+.Student p{
+	padding: 0 150px 20px 0 !important;
+}
+.Student li{
+	opacity: .9;
+	font-size: 14px;
+	letter-spacing: 2;
+	line-height: 2;
+	padding: 2px 0 2px 0px;
+}
+.mission  p, .task p, .work p, .a-z p , .Academic p , .Student p , .Staff p{  
+	opacity: .9;
+	font-size: 14px;
+	letter-spacing: 2;
+	line-height: 2;
+	position: relative;
+	padding: 0 30px 20px 110px;
+}
+.mission-flex div:nth-of-type(1) p:nth-of-type(1)::before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 10px;
+	background: url('../images/aboutus_sprite.png') no-repeat 0 0;
+	width: 52px;
+	height: 52px;
+}
+.mission-flex div:nth-of-type(1) p:nth-of-type(2)::before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 10px;
+	top:15px ;
+	background: url('../images/aboutus_sprite.png') no-repeat -65px -4px;
+	width: 52px;
+	height: 52px;
+}
+.mission-flex div:nth-of-type(2) p:nth-of-type(1)::before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 10px;
+	background: url('../images/aboutus_sprite.png') no-repeat -191px -6px;
+	width: 52px;
+	height: 52px;
+}
+.mission-flex div:nth-of-type(2) p:nth-of-type(2)::before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 10px;
+	top:15px ;
+	background: url('../images/aboutus_sprite.png') no-repeat -130px -7px;
+	width: 52px;
+	height: 52px;
+}
+.mission, .task, .work  , .a-z , .Academic {
+	border-bottom: 1px solid #f5f0f0 !important;
+}
+.work-flex{
+	display: flex;
+	flex-direction: row;
+}
+.work-flex div{
+	border: 1px solid  #f5f0f0;
+	color: #3d5a76;
+	width: 100%;
+	padding: 35px 80px 35px 80px ;
+	font-size: 16px;
+	position: relative;
+}
+.work-flex div:nth-of-type(1)::before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 30px;
+	top:30px;
+	background: url('../images/aboutus_sprite.png') no-repeat -1px -74px;
+	width: 42px;
+	height: 30px;
+}
+.work-flex div:nth-of-type(2)::before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 30px;
+	top:30px;
+	background: url('../images/aboutus_sprite.png') no-repeat -51px -68px;
+	width: 38px;
+	height: 36px;
+
+}
+.work-flex div:nth-of-type(3)::before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 30px;
+	top:30px;
+	background: url('../images/aboutus_sprite.png') no-repeat -97px -69px;
+	width: 28px;
+	height: 35px;
+}
+.floot-contactus{
+	
+	border-top: 1px solid #f5f0f0;
+	color: #585858;
+	position: relative;
+}
+.floot-contactus h2{
+	display: none;
+}
+.contactus-flex{
+	display: flex;
+	flex-direction: row;
+}
+.contactus-flex div{
+	opacity: .9;
+	font-size: 14px;
+	letter-spacing: 2;
+	line-height: 2;
+	padding: 0 20px;
+	display: flex;
+}
+.contactus-flex div:nth-of-type(3){
+	flex-direction: column;
+}
+#main-content{
+	position: relative;
+}
+
+.Academic p{
+	position: relative !important;
+}
+.Academic p:nth-of-type(1)::before{
+	content: "";
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 5px;
+	top:15px ;
+	background: url('../images/services_sprite.png') no-repeat -183px -7px;
+	width: 52px;
+	height: 47px;
+}
+ .Academic p:nth-of-type(2)::before{
+	content: "";
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 5px;
+	top:45px ;
+	background: url('../images/services_sprite.png') no-repeat -123px -17px;
+	width: 52px;
+	height: 36px;
+}
+.Academic p:nth-of-type(3)::before{
+	content: "";
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 5px;
+	top:5px ;
+	background: url('../images/services_sprite.png') no-repeat -62px -2px;
+	width: 52px;
+	height: 50px;
+}
+.Academic p:nth-of-type(4)::before{
+	content: "";
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 5px;
+	top:15px ;
+	background: url('../images/services_sprite.png')  no-repeat 0 0;
+	width: 52px;
+	height: 52px;
+}
+#btn{
+	display: inline-block;
+	position: absolute;
+	right: 50px;
+	bottom: 5%;
+	cursor: pointer;
+	color: #fff;
+	padding: 15px;
+	transition: all 1s;
+	font-weight: bold;
+	background-color: rgba(0,0,0,.6);
+	border: none;
+	outline: none;
+	opacity: .3;
+	font-size:24px;
+	border-radius: 4px;
+}
+#btn:hover{
+	opacity: .5;
+	background-color: rgba(0,0,0,.2);
+	color: #fff;
+}
+.aboutfooter , .servicefooter{
+	opacity: .6;
+	font-size: 11px;
+	letter-spacing: 2;
+	line-height: 2;
+	color: #585858;
+	text-align: center;
+	width: 100%;
+	padding: 10px 0 ;
+	position: absolute;
+	bottom: 0;
+	border-top: 1px solid #f5f0f0;
+}
+                                         /*------------------- end about  main and service------------------*/
+
+
+
+@media (max-width: 767px)  {  /*mobile table rules*/
+	.nav{
+		display: none;
+	}
+	header{
+		display: flex;
+		padding: 0 10px;
+	}
+	#dropdown{
+	    display: inline-block;
+	   	flex-basis: 10%;
+     }
+	#dropdown span{
+		display: block;
+		position: absolute;
+        background-color: #fff;
+        height: 3px;
+	}
+	#dropdown span:nth-child(1){
+		top: 19px;
+        width: 14px;
+	}
+	#dropdown span:nth-child(2){
+		top: 27px;
+        width: 27px;
+	}
+	#dropdown span:nth-child(3){
+		top: 36px;
+        width: 20px;
+	}
+	.logo{
+		flex-basis: 90%;
+		margin-left: 5px;
+		margin-top: 10px;
+	}
+	main .container h2{
+		max-width: 380px
+	}
+	.addres{
+	   margin-top: 90px;
+		padding-left: 10px;
+		margin-left: 10px;
+    }
+	#main-home{
+		padding-bottom: 100px;
+	}
+	.content{
+		flex-direction: column;
+	}
+
+	#about-header{
+		padding: 13px 10px 0;
+	}
+	.sidebar{
+		display: none;
+	}
+	.mission-flex{
+	    display: flex;
+	    flex-direction: column;
+    }
+	.task p , .work p , .a-z p  , .Student p, .Staff p{
+	   padding: 0 !important;
+     }
+	.main-container h2{
+		font-size: 20px;
+	}
+	.Academic p{
+		padding: 5px 0px  5px 70px !important;
+	}
+	.mission , .task , .work, .a-z , .Academic , .Student{
+    	border-bottom:none !important;
+   }
+	.work-flex{
+	   display: flex;
+	  flex-direction: column;
+   }
+	.work-flex div{
+		font-size: 14px;
+		text-align: center;
+		padding-right: 0;
+		padding-left: 50px;
+	}
+	.work-flex div:nth-of-type(1)::before{	
+	  position: absolute;
+	   left: 5%;
+	   top:30px;
+    }
+   .work-flex div:nth-of-type(2)::before{	
+	   position: absolute;
+	   left: 5%;
+	   top:30px;
+   }
+   .work-flex div:nth-of-type(3)::before{
+	   position: absolute;
+	   left: 5%;
+	   top:30px;
+    }
+	.floot-contactus h2{
+	   display: block;
+    }
+	.floot-contactus{
+		border: none;
+	}
+	.contactus-flex{
+		flex-direction: column;
+	}
+	.contactus-flex div{
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+	}
+	#btn{
+		display: none;
+	}
+	.aboutfooter , .servicefooter{
+		width: 100% !important;
+		border-top: 1px solid #f5f0f0;
+		padding-right: 0 !important;
+	}
+	
+    #main-content{
+	flex-basis: 100%;
+	}
+}
+/* -------------------------small screen rules---------------------------*/
+
+@media(min-width: 768px){    
+
+	#dropdown-content{
+		display: none !important;
+	}
+}
+
+
+
+@media(min-width: 768px) and (max-width :1200px){
+	.work-flex div:nth-of-type(1)::before{	
+	  position: absolute;
+	   left: 5px;
+	   top:30px;
+
+    }
+   .work-flex div:nth-of-type(2)::before{	
+	   position: absolute;
+	   left: 5px;
+	   top:30px;
+   }
+   .work-flex div:nth-of-type(3)::before{
+	   position: absolute;
+	   left: 5px;
+	   top:30px;
+	
+    }
+	.work-flex div{
+		font-size: 14px;
+		padding-right: 0px;
+		padding-left: 50px;
+	}
+	.task p , .work p , .a-z p  , .Student p, .Staff p{
+	   padding-right: 120px !important;
+     }
+
+}
+@media (max-width: 280px)  {
+	.logo a span:nth-child(3){
+	    margin-left: 3px;
+		font-size: 12px  !important;
+    }
+	
+	.logo a span:nth-child(1){
+		font-size: 20px !important;	
+	}
+}
+/*----------------------------------small mobile table rules---------------------------------------*/
+ @media (max-width: 320px)  {
+	
+	.logo a{
+		display: flex;
+	}
+	.logo{
+		overflow: hidden;
+	}
+	.logo a span:nth-child(3){
+	    margin-left: 3px;
+		font-size: 12px;
+    }
+	
+	.logo a span:nth-child(1){
+		font-size: 27px;	
+	}
+	 #dropdown{
+		 margin-top: 5px;
+	 }
+	.main-container h2{
+		font-size: 20px;
+	}
+	 .description, .services{
+    	padding: 40px 0 50px 30px;	
+	
+     }
+	 .content p{
+		 margin-right: 20px;
+	 }
+	 .content button{
+		 margin-right: 15px;
+	 }
+	.mission-flex div:nth-of-type(1) p:nth-of-type(1)::before , .mission-flex div:nth-of-type(1) p:nth-of-type(2)::before , .mission-flex div:nth-of-type(2) p:nth-of-type(1)::before , .mission-flex div:nth-of-type(2) p:nth-of-type(2)::before{
+	    display: none;
+    }
+	.mission  p{
+		padding: 10px ;
+	}
+	.task p , .Academic p  , .Student p , .Staff p {
+	   padding: 0 10px !important;
+	   border-bottom: none;
+     }
+	 
+	.Academic p:nth-of-type(1)::before, .Academic p:nth-of-type(2)::before, .Academic p:nth-of-type(3)::before, .Academic p:nth-of-type(4)::before{
+		display: none;
+	}
+ 
+}   
+@media (min-width: 1440px) {
+	#home{
+	  min-height: 100hv !important;
+     }
+	#header{
+		min-height: 20%;
+	}
+	#main-home{
+		min-height: 900px;
+	}
+	main .container h2{
+		font-size: 32px;
+	}
+	.addres{
+    	margin-top: 200px;
+		margin-bottom: 200px;
+    }
+	.content{
+	  min-height: 550px!important;	
+	}
+	.content p{
+		margin-top: 50px;
+		font-size: 20px;
+	}
+	.content .services h2 , .content .description h2{
+	     font-size: 35px;
+    }
+	.content button {
+		margin-top: 50px;
+	    padding: 15px;
+    }
+}
+
+/*-------------------------------start framework------------------------*/
+
+.underline::after{
+	content: " ";
+	display: block;
+	margin-top: 10px;
+	height: 5px;
+	width: 100px;
+	background-color: #e1c653;
+}
+
+.main-container .underline::after{
+	width: 50px;
+	height: 3px;
+}
+/*end framework*/
+
